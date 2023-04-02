@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "release": "bumpp package.json --commit --push --tag && pnpm -r publish --access public"
+    "publish": "pnpm -r publish --access public",
+    "release": "bumpp package.json --commit --push --tag && pnpm publish"
   },
   "keywords": [],
   "author": "jeremye",
